@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DarkWeb Portal</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Courier New', monospace;
+      background-color: #0a0a0a;
+      color: #f44336;
+      background-image: url('https://www.transparenttextures.com/patterns/asfalt-light.png');
+    }
+
+    header {
+      background-color: #111;
+      padding: 20px;
+      text-align: center;
+      border-bottom: 2px solid red;
+    }
+
+    h1 {
+      font-size: 2.5rem;
+      text-shadow: 0 0 5px red;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1a1a1a;
+      padding: 10px;
+    }
+
+    nav a {
+      color: red;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 20px;
+      padding: 30px;
+    }
+
+    .card {
+      background-color: #1a1a1a;
+      padding: 20px;
+      border: 1px solid #444;
+      border-radius: 10px;
+      box-shadow: 0 0 10px #ff0000aa;
+    }
+
+    .card h2 {
+      color: #ff4d4d;
+    }
+
+    .card img {
+      width: 100%;
+      height: 180px;
+      object-fit: cover;
+      border-radius: 5px;
+      filter: blur(3px) grayscale(100%);
+    }
+
+    footer {
+      text-align: center;
+      padding: 20px;
+      background-color: #111;
+      color: #aaa;
+      font-size: 0.9rem;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>DarkWeb Access Portal</h1>
+    <p><em>Anonymity is your only ally...</em></p>
+  </header>
+
+  <nav>
+    <a href="#">Forums</a>
+    <a href="#">Marketplace</a>
+    <a href="#">Crypto Tools</a>
+    <a href="#">Surveillance</a>
+  </nav>
+
+  <div class="container">
+    <div class="card">
+      <h2>Encrypted Forums</h2>
+      <img src="https://via.placeholder.com/300x180?text=Blurred+Forum+Image" alt="Encrypted Forum" />
+      <p>Join anonymous discussions on restricted topics. All identities are masked.</p>
+    </div>
+
+    <div class="card">
+      <h2>Black Market</h2>
+      <img src="https://via.placeholder.com/300x180?text=Blurred+Items" alt="Black Market" />
+      <p>Various obscure listings detected. Access is monitored.</p>
+    </div>
+
+    <div class="card">
+      <h2>Cryptocurrency Hub</h2>
+      <img src="https://via.placeholder.com/300x180?text=Crypto+Tunnel" alt="Crypto" />
+      <p>Convert, mix, and anonymize transactions across shadow networks.</p>
+    </div>
+
+    <div class="card">
+      <h2>Surveillance Tools</h2>
+      <img src="https://via.placeholder.com/300x180?text=Blurred+Tech" alt="Surveillance" />
+      <p>Access to OSINT, scrapers, and digital stealth technologies.</p>
+    </div>
+  </div>
+
+  <footer>
+    <p>⚠️ This is a fictional educational project. Any resemblance to real services is purely for awareness purposes.</p>
+  </footer>
+</body>
+</html>

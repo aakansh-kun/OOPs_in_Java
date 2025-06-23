@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<website>
+  <title>My Test Website</title>
+  <header>Welcome to My Test Website</header>
+  <content>
+    <section>
+      <heading>About</heading>
+      <text>This is a simple test website using XML and JavaScript.</text>
+    </section>
+    <section>
+      <heading>Contact</heading>
+      <text>Email us at contact@example.com</text>
+    </section>
+  </content>
+</website>

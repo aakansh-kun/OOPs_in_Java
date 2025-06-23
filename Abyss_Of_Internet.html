@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DARK WEB</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: 'Courier New', Courier, monospace;
+      background-color: #000;
+      color: #fff;
+      overflow-y: auto;
+    }
+    .header {
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: red;
+      padding: 20px;
+      border-bottom: 2px solid red;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: repeat(4, auto);
+      gap: 20px;
+      padding: 20px;
+    }
+    .card {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+    .card-text {
+      padding: 20px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .subtitle {
+      font-size: 16px;
+      color: #aaa;
+    }
+    .footer-message {
+      text-align: center;
+      padding: 20px;
+      font-size: 14px;
+      color: #888;
+      border-top: 1px solid #333;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">DARK WEB</div>
+  <div class="grid">
+    <!-- Row 1 -->
+    <div class="card" onclick="redirectToFunnySite(0)">
+      <img src="https://images.unsplash.com/photo-1620065692460-d8e110a47ffb?q=80&w=2680&auto=format&fit=crop" alt="Drug Trafficking" />
+      <div class="card-text">
+        <div class="title">Drug Trafficking</div>
+        <div class="subtitle">Sale of illicit drugs</div>
+      </div>
+    </div>
+    <div class="card" onclick="redirectToFunnySite(1)">
+      <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=2670&auto=format&fit=crop" alt="Weapons Sales" />
+      <div class="card-text">
+        <div class="title">Weapons Sales</div>
+        <div class="subtitle">Firearms and explosives</div>
+      </div>
+    </div>
+    <!-- Row 2 -->
+    <div class="card" onclick="redirectToFunnySite(2)">
+      <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2670&auto=format&fit=crop" alt="Stolen Data" />
+      <div class="card-text">
+        <div class="title">Stolen Data</div>
+        <div class="subtitle">Personal and financial information</div>
+      </div>
+    </div>
+    <div class="card" onclick="redirectToFunnySite(3)">
+      <img src="https://images.unsplash.com/photo-1619517568681-e2cc7f0b5463?q=80&w=2668&auto=format&fit=crop" alt="Hitman Services" />
+      <div class="card-text">
+        <div class="title">Hitman Services</div>
+        <div class="subtitle">Murder for hire</div>
+      </div>
+    </div>
+    <!-- Row 3 -->
+    <div class="card" onclick="redirectToFunnySite(4)">
+      <img src="https://imgs.search.brave.com/NibNFqIaBcaZd8GwzWyWX_lxlIrLJgua5tIY6-ZtqEo/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9pbWcu/ZnJlZXBpay5jb20v/ZnJlZS1waG90by9o/YW5kcy10aWVkLXdp/dGgtcm9wZS1hcm91/bmRfNTM4NzYtMTUz/MjcuanBnP3NlbXQ9/YWlzX2h5YnJpZA" />
+      <div class="card-text">
+        <div class="title">Human Trafficking</div>
+        <div class="subtitle">Forced labor and exploitation</div>
+      </div>
+    </div>
+    <div class="card" onclick="redirectToFunnySite(5)">
+      <img src="https://imgs.search.brave.com/utncSe4VM_g35miIqBD5LvH-PEX-fehJcSxLdlmQO2k/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tZWRp/YS5nZXR0eWltYWdl/cy5jb20vaWQvOTIz/NDQ0Njk2L3Bob3Rv/L2Nsb3NlLXVwLW9m/LWh1bWFuLWhhbmQt/dG91Y2hpbmctZ2xh/c3MuanBnP3M9NjEy/eDYxMiZ3PTAmaz0y/MCZjPWlEcFRIZkpB/VTBJV2tQS2x1VjEy/cFVnZjJmR0VNSU5H/N3VXUHJzT2lHODQ9" />
+      <div class="card-text">
+        <div class="title">Exploitation</div>
+        <div class="subtitle">Abuse of vulnerable individuals</div>
+      </div>
+    </div>
+    <!-- Row 4 -->
+    <div class="card" onclick="redirectToFunnySite(6)">
+      <img src="https://imgs.search.brave.com/NA5K1S6eAdpD9Ac_MN1eKzwk_KbW8d-z4m3Y6Nq7obY/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9tLm1l/ZGlhLWFtYXpvbi5j/b20vaW1hZ2VzL00v/TVY1Qk5qZGhaRGc0/TmpjdE9HVmlOeTAw/TVRkbExXSTNZVGN0/TmpFeU16YzFObUU0/WWpKalhrRXlYa0Zx/Y0djQC5qcGc" />
+      <div class="card-text">
+        <div class="title">Red Rooms</div>
+        <div class="subtitle">Urban legends of dark web horrors</div>
+      </div>
+    </div>
+    <div class="card" onclick="redirectToFunnySite(7)">
+      <img src="https://imgs.search.brave.com/LsG1xqEJ79UnUurPcko3YB_1E7QZoVLh5-_C1ZZXXLk/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA4LzA2LzkwLzg4/LzM2MF9GXzgwNjkw/ODgzOV9kdVpKVU03/VWRLZXV3UnJYVnZ6/d2VCUVczSVlMVFNi/SC5qcGc" />
+      <div class="card-text">
+        <div class="title">Organ Trafficking</div>
+        <div class="subtitle">Illicit trade of human organs</div>
+      </div>
+    </div>
+  </div>
+  <div class="footer-message">Click an item... if you dare.</div>
+  <script>
+    const funnyLinks = [
+      "https://a.co/d/gAPeXJ8",            
+      "https://a.co/d/aUqhKBr",       
+      "https://youtu.be/IgXZmJHZDNo?si=m_E4aLL49FT_ITyj",  
+      "https://ioi.dk/hitman",   
+      "https://tinder.com/",            
+      "https://youtube.com/shorts/fYRYG5hL0Pw?si=TtCGQyxYLeFYOPW-",               
+      "https://youtube.com/shorts/SBHoeRlzt9I?si=7_4IjCwgXxlICl2d",         
+      "http://imdb.com/title/tt18974572/"          
+    ];
+
+    function redirectToFunnySite(index) {
+      window.location.href = funnyLinks[index];
+}
+  </script>
+</body>
+</html>

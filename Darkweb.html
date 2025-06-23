@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>DARK WEB</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #fff;
+      font-family: 'Courier New', Courier, monospace;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      text-align: center;
+      font-size: 48px;
+      font-weight: bold;
+      color: red;
+      padding: 20px;
+      border-bottom: 2px solid red;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+    .card {
+      background-color: #111;
+      border: 1px solid #333;
+      border-radius: 8px;
+      overflow: hidden;
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: scale(1.03);
+    }
+    .card img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+      filter: brightness(60%);
+    }
+    .card-text {
+      padding: 15px;
+    }
+    .title {
+      font-size: 20px;
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .subtitle {
+      font-size: 14px;
+      color: #aaa;
+    }
+    .footer-message {
+      text-align: center;
+      margin-top: 30px;
+      font-size: 14px;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">DARK WEB</div>
+
+  <div class="grid">
+    <div class="card" onclick="scareMe()">
+      <img src="https://images.unsplash.com/photo-1620065692460-d8e110a47ffb?q=80&w=2680&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+      <div class="card-text">
+        <div class="title">Drug Trafficking</div>
+        <div class="subtitle">Sale of illicit drugs</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="scareMe()">
+      <img src="https://images.unsplash.com/photo-1595590424283-b8f17842773f?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+      <div class="card-text">
+        <div class="title">Weapons Sales</div>
+        <div class="subtitle">Firearms and explosives</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="scareMe()">
+      <img src="https://images.unsplash.com/photo-1542831371-29b0f74f9713?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+      <div class="card-text">
+        <div class="title">Stolen Data</div>
+        <div class="subtitle">Personal and financial information</div>
+      </div>
+    </div>
+
+    <div class="card" onclick="scareMe()">
+      <img src="https://images.unsplash.com/photo-1619517568681-e2cc7f0b5463?q=80&w=2668&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" />
+      <div class="card-text">
+        <div class="title">Hitman Services</div>
+        <div class="subtitle">Murder for hire</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer-message">Click an item... if you dare.</div>
+
+  <script>
+    function scareMe() {
+      alert("😱 You've clicked something forbidden!\nJust kidding — this is for educational purposes only.\nStay safe online.");
+    }
+  </script>
+</body>
+</html>
